@@ -53,4 +53,5 @@ variable "sample_dict" {
 # we can just call by their key names for above example the keys are number1,string1,boolean,number
 
 variable "env" {}
+variable "auto_num1"
 
