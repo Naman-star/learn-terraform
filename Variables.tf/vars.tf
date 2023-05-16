@@ -24,14 +24,14 @@ variable "sample_boolean" {
 # 1 .so far we have seen is Default variable type
 
 # 2  .we have list variable type, Meaning single variable can hold multiple values{data types}
-variable = "sample_list" {
+variable "sample_list" {
    default = [
       100,
       "hello",
       true,
       123
       ]
-}
+    }
 
 ##Data type  inside the list does not matter in terraform.
 ##to access we dont need to call the function like shell scripting
