@@ -36,3 +36,18 @@ variable "sample_list" {
 ##Data type  inside the list does not matter in terraform.
 ##to access we dont need to call the function like shell scripting
 ##output for above row 27-34 will be there in outputs.tf row 14
+#all the tf files it can consider as one terraform files it will load and run
+
+#3. variable type- we have a dictionary, Meaning single variable will have multiple values , and each value is going to have seperate name.type
+
+variable "sample_dict" {
+ default =
+    number1 = 100
+    string1 = "hello"
+    boolean =true
+    number2 = 123
+ }
+}
+
+#this is the most preffered variable over the list when we declare the data because we dont have to call by its index
+# we can just call by their key names for above example the keys are number1,string1,boolean,number
