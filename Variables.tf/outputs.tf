@@ -29,6 +29,9 @@ output "sample_dict_bool" {
 output "env" {
   value = var.env
 }
+##here means above command we have to specify the file name to call for example we are calling environment
+## environment variable but we gave variable value at prod.tfvars and dev.tfvars so in putty we have to give terraform apply -var-file = prod.tfvars
+# and terraform appply -var-file = dev.tfvars
 
 output "auto_num1" {
  value = var.auto_num1

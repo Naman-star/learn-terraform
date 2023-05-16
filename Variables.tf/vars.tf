@@ -53,5 +53,9 @@ variable "sample_dict" {
 # we can just call by their key names for above example the keys are number1,string1,boolean,number
 
 variable "env" {}
+
+
 variable "auto_num1" {}
+#if any auto.tfvars file is there then terraform will automatically load and run.
 variable "sample1" {}
+#if any terraform.tfvars file is there then terraform will automatically load and run.
