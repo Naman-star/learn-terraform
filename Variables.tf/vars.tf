@@ -51,3 +51,6 @@ variable "sample_dict" {
 
 #this is the most preffered variable over the list when we declare the data because we dont have to call by its index
 # we can just call by their key names for above example the keys are number1,string1,boolean,number
+
+variable "env" {}
+
