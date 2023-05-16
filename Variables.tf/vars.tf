@@ -41,7 +41,7 @@ variable "sample_list" {
 #3. variable type- we have a dictionary, Meaning single variable will have multiple values , and each value is going to have seperate name.type
 
 variable "sample_dict" {
- default {
+ default = {
     number1 = 100
     string1 = "hello"
     boolean =true
