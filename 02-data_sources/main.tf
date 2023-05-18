@@ -16,5 +16,5 @@ output "all_sg" {
 data "aws_security_group" "single"{}
 
 output "single" {
-   value = data.aws_security_group.single
+   value = data.aws_security_groups.single
 }
