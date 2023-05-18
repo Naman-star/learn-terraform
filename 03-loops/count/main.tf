@@ -15,12 +15,12 @@ variable "fruits" {
 
 // for above command row 7-11  3 fruits are there so 3 times its running but it wont show fruit names u can check by running
 
-resource "null_resource" "fruits" {
+resource "null_resource" "fruits1" {
   count = length(var.fruits)
   provisioner "local-exe" {
      command = "echo Fruit Name - ${var.fruits[count.index]}"
   }
 }
-variable "fruits" {
+variable "fruits1" {
   default = ["apple","banana","orange"]
 }
