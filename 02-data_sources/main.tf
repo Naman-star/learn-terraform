@@ -13,7 +13,10 @@ output "all_sg" {
 }
 ##above command prints security id of all security groups which u created in ec2
 
-data "aws_security_groups" "single"{}
+data "aws_security_groups" "single"{
+  count = length(data.aws_security_groups.test.ids)
+  id = data.aws_security_groups.test.ids(count.index)
+}
 
 output "single" {
    value = data.aws_security_groups.single
