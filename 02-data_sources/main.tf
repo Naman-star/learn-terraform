@@ -7,13 +7,13 @@
 //}
 ##above command prints security id of allow_all security group
 
-data "aws_security_group" "test"{}
+data "aws_security_groups" "test"{}
 output "all_sg" {
   value = data.aws_security_groups.test
 }
 ##above command prints security id of all security groups which u created in ec2
 
-data "aws_security_group" "single"{}
+data "aws_security_groups" "single"{}
 
 output "single" {
    value = data.aws_security_groups.single
