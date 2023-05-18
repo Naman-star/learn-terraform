@@ -11,7 +11,7 @@ data "aws_security_groups" "test"{}
 output "all_sg" {
   value = data.aws_security_groups.test
 }
-##above command prints security id of all security groups which u created in ec2
+##above command prints security id of all security groups which u created in ec2 but here u cant able to see security name
 
 data "aws_security_group" "single"{
   count = length(data.aws_security_groups.test.ids)
@@ -21,3 +21,4 @@ data "aws_security_group" "single"{
 output "single" {
    value = data.aws_security_group.single
 }
+##above command prints security id of all security groups which u created in ec2 but here u can able to see security name
