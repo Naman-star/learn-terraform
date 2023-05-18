@@ -26,3 +26,6 @@ resource "null_resource" "fruits1" {
 variable "fruits1" {
   default = ["apple","banana","orange"]
 }
+
+// for above command row 18-29  3 fruits are there so 3 fruit names u can see
+
