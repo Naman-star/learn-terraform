@@ -11,8 +11,7 @@ resource "null_resource" "fruits1" {
 
   for_each = var.fruits1
   provisioner "local-exec" {
-
-     command = "echo Fruit Name -  ${each.key} - ${each.value["count"]}"
+      command = "echo Fruit Name -  ${each.key} - ${each.value["count"]}"
   }
 }
 
@@ -40,6 +39,7 @@ variable "fruits1" {
              name = "banana"
              count = 100
            }
+   }
  }
 
  //you can see fruits and fruits 1 prints same output but if you want to give moe input you can use fruits1.
