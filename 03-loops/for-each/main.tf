@@ -26,6 +26,7 @@ variable "fruits" {
 
 
 variable "fruits1" {
+
   default = {
     apple = {
       name = "apple"
