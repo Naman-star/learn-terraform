@@ -7,7 +7,7 @@ resource "null_resource" "fruits" {
   }
 }
 
-esource "null_resource" "fruits1" {
+resource "null_resource" "fruits1" {
 
   for_each = var.fruits
   provisioner "local-exec" {
