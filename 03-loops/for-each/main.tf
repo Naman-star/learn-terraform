@@ -34,7 +34,6 @@ variable "fruits" {
 //  }
 //}
 
-//for above command row 7-11  3 fruits are there so 3 times its running but it wont show fruit names u can check by.
-//running.
+//for above command row 7-11  3 fruits are there so 3 times its running but it wont show fruit names u can check by running.
 
 
