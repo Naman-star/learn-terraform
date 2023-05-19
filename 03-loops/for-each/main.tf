@@ -16,23 +16,3 @@ variable "fruits" {
     }
  }
 
-//variable "fruits" {
-//  default = {
-//    apple {
-//      name = "apple"
-//      count = 10
-//    }
-//    orange {
-//      name = "orange"
-//      count = 200
-//    }
-
-//    banana {
-//      name = "banana"
-//      count = 10
-//    }
-//  }
-//}
-
-
-
