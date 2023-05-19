@@ -58,7 +58,7 @@ resource "null_resource" "vegetables" {
 }
 
 variable "vegetables" {
-  default = ["carrot","capsicum"]
+  default = ["carrot", "capsicum"]
 
  }
 
