@@ -4,15 +4,25 @@ resource "null_resource" "fruits" {
   provisioner "local-exec" {
      //command = "echo Fruit Name - ${var.fruits[count.index]}"
      //provisioner is another block which u can run in any resource after creating resource u wanted to deal with that u can go with provisioner
-     command = "echo Fruit Name -  ${length(var.fruits[each.key])} - ${length(var.fruits[each.value])}"
+     command = "echo Fruit Name -  ${var.fruits[each.value["name"])}
   }
 }
 
 variable "fruits" {
   default = {
-    apple = 100
-    orange = 200
-    banana = 100
+    apple {
+      name = "apple"
+      count = 10
+    }
+    orange {
+      name = "orange"
+      count = 200
+    }
+
+    banana {
+      name = "banana"
+      count = 10
+    }
   }
 }
 
