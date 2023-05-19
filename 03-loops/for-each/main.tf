@@ -42,5 +42,7 @@ variable "fruits1" {
            }
  }
 
+ //you can see fruits and fruits 1 prints same output but if you want to give moe input you can use fruits1.
+
 
 
