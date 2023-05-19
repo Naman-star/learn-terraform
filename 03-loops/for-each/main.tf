@@ -46,3 +46,20 @@ variable "fruits1" {
 
 
 
+ //below you can see for_each on list
+ //in list there wont be value only key will be there.
+
+resource "null_resource" "vegetables" {
+
+  for_each = var.vegetables
+  provisioner "local-exec" {
+      command = "echo Vegetable name $(each.key)"
+  }
+}
+
+variable "vegetables" {
+  default = ["carrot","capsicum"]
+
+ }
+
+
