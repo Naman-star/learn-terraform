@@ -27,6 +27,10 @@ output "sample1" {
   sample3 = var.sample1[1]
 }
 
+output "sample1" {
+  value = var.sample1[1]
+}
+
 output "sample2" {
   value = lookup(var.sample2, "a1", "dummy")
 }
