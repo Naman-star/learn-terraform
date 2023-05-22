@@ -24,11 +24,14 @@ variable "sample2" {
 
 output "sample1" {
   value = element(var.sample1, 0)
+  value = var.sample1[1]
 }
 
 output "sample2" {
   value = lookup(var.sample2, "a1", "dummy")
 }
+#This loopup function first look for whether a1 is there or not if its not there it will print the next given value that is dummy.
+#without lookup function if u try 30 row line it shows error because a1 doesnt exist.
 
 
 
