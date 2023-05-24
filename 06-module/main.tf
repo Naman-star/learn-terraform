@@ -1,3 +1,3 @@
 module "sample" {
-  source = " ./module"
+  source = "./module"
 }
