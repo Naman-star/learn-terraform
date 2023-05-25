@@ -1,5 +1,4 @@
 output "dummy_op" {
- source = "./module"
- input = "xyz"
+ value = "abc"
 }
 
